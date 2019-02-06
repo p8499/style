@@ -144,6 +144,7 @@ public class Style {
     public static final String ANDROID_CONTEXTCLICKABLE = "android:contextClickable";
     public static final String ANDROID_BACKGROUND = "android:background";
     public static final String ANDROID_INPUTTYPE = "android:inputType";
+    public static final String ANDROID_IMEOPTIONS = "android:imeOptions";
     public static final String ANDROID_TEXTALLCAPS = "android:textAllCaps";
     public static final String ANDROID_TEXTSIZE = "android:textSize";
     public static final String ANDROID_TEXTCOLOR = "android:textColor";
