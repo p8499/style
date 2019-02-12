@@ -50,6 +50,13 @@ public class Environment {
         return this;
     }
 
+    public Style get(String styleName) {
+        for (Style style : mStyleList)
+            if (style.getStyleName().equals(styleName))
+                return style;
+        return null;
+    }
+
     public static Environment create(String environmentName) {
         return new Environment(environmentName);
     }
