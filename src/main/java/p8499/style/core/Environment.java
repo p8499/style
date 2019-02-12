@@ -50,6 +50,10 @@ public class Environment {
         return this;
     }
 
+    public void plusAssign(Style style) {
+        addStyle(style);
+    }
+
     public Style get(String styleName) {
         for (Style style : mStyleList)
             if (style.getStyleName().equals(styleName))
