@@ -27,6 +27,19 @@ public class Style {
         onCreateEvent.onCreate(this);
     }
 
+    public Style(Style origStyle, String styleName) {
+        mEnvironment = origStyle.mEnvironment;
+        mStyleName = styleName;
+        mStyleFile = new File(origStyle.getEnvironment().getTempFolder(), "values" + File.separator + "style_" + styleName + ".xml");
+        mNameValueMap = new HashMap<>();
+        mNameValueMap.putAll(origStyle.mNameValueMap);
+    }
+
+    public Style(Style origStyle, String styleName, OnCreateEvent onCreateEvent) {
+        this(origStyle, styleName);
+        onCreateEvent.onCreate(this);
+    }
+
     public Environment getEnvironment() {
         return mEnvironment;
     }
