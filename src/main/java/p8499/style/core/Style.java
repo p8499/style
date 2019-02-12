@@ -89,6 +89,11 @@ public class Style {
         return this;
     }
 
+    public Style addItem(Style... origStyles) {
+        for (Style origStyle : origStyles) mNameValueMap.putAll(origStyle.mNameValueMap);
+        return this;
+    }
+
     public File print() {
         PrintWriter printWriter = null;
         try {
