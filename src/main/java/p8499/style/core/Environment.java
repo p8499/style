@@ -50,8 +50,9 @@ public class Environment {
         return this;
     }
 
-    public void plusAssign(Style style) {
+    public Environment plusAssign(Style style) {
         addStyle(style);
+        return this;
     }
 
     public Style get(String styleName) {

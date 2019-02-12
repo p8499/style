@@ -40,8 +40,9 @@ public class Style {
         onCreateEvent.onCreate(this);
     }
 
-    public void plusAssign(Style anotherStyle) {
+    public Style plusAssign(Style anotherStyle) {
         mNameValueMap.putAll(anotherStyle.mNameValueMap);
+        return this;
     }
 
     public Environment getEnvironment() {
